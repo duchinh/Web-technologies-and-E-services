@@ -1,0 +1,207 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+.w3-container {
+  transition: opacity 0.5s ease-in-out;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; /* Increase the base font size */
+  line-height: 1.6; /* Improve readability */
+}
+.page-container {
+  max-width: 1400px;
+  margin-left: 250px; /* Ensure main content is not overlapped by sidebar */
+  padding-top: 70px; /* Add padding to avoid overlap with navbar */
+  transition: margin-left 0.4s;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Make headings bold */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em; /* Larger font size for main headings */
+}
+
+h2 {
+  font-size: 2em; /* Slightly smaller for subheadings */
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p, ul, li {
+  font-size: 1.125em; /* Increase font size for paragraphs and list items */
+}
+
+.w3-container {
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.w3-main {
+  margin-left: 250px; /* Ensure main content is not overlapped by sidebar */
+  padding: 20px;
+}
+
+.w3-bar-item {
+  font-size: 1.125em; /* Increase font size for menu items */
+}
+
+.w3-button {
+  font-size: 1.125em; /* Increase font size for buttons */
+}
+
+.w3-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.w3-ul li {
+  padding: 8px 16px;
+}
+
+.w3-hoverable li:hover {
+  background-color: #ddd;
+}
+
+.w3-padding-32 {
+  padding: 32px !important;
+}
+
+.w3-row-padding {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.w3-twothird {
+  width: 66.66666%;
+}
+
+.w3-third {
+  width: 33.33333%;
+}
+
+.w3-left {
+  float: left !important;
+}
+
+.w3-margin-right {
+  margin-right: 16px !important;
+}
+
+.w3-large {
+  font-size: 18px !important;
+}
+
+.content-image {
+  width: 100%;
+  align-self: center;
+  margin-bottom: 2%;
+}
+
+@media (min-width: 1480px) {
+  .content-image {
+    width: 750px;
+  }
+}
+
+.ad-image {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+#logo {
+  width: 25px;
+}
+
+table {
+  border: 1px, solid;
+  padding: 2px;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+tr {
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid;
+  padding: 10px;
+}
+
+th {
+  text-align: left;
+  width: 43%;
+}  
+
+li {
+  padding: 6px;
+}
+
+iframe {
+  width: 100%;
+  height: 500dp;
+}
+.footer__item {
+  display: flex;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 64px 20px;
+  text-align: left;
+}
+
+footer h2, footer h3 {
+  margin-top: 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #f3e1e1;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .w3-ul {
+  padding: 0;
+}
+
+footer .w3-ul li {
+  padding: 8px 0;
+}
+
+footer .w3-ul li img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.navbar {
+  margin: 10px;
+}
+ 

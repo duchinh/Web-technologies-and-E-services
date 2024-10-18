@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+<title>Web technologies and e-Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  body {
+    margin-top: 57px;
+  }
+
+  .page-container {
+    max-width: 1400px; 
+    margin-left: 0;
+    padding-top: 70px; /* Add padding to avoid overlap with navbar */
+    transition: margin-left 0.4s;
+  }
+
+  @media (min-width: 993px) {
+    .page-container, footer {
+      margin-left: 250px;
+    }
+  }
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><img id="logo" src="images/Logo.png" alt="Logo"></a>
+    <a href="course-info.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học </a>
+    <a href="web-technologies.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ web </a>
+    <a href="student-info.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-third w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar" style="width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-teal" href="#education">Education</a>
+  <a class="w3-bar-item w3-button w3-hover-teal" href="#projects">Projects</a>
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top page-container">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-twothird">
+
+      <div id="education" class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Le Hong Phong High School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018-2021</h6>
+          <p>A1 specialized class</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Hanoi University of Science and Technology</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - present</h6>
+          <p>Information and Technology</p><br>
+        </div>
+      </div>
+    
+      <div id="projects" class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Laptop-Shop Back-end Spring</b></h5>
+          <h6 class="w3-text-teal">Personal Project</h6>
+          <p>Build an e-commerce laptop shop using Spring Framework</p>
+          <ul>
+            <li>Build a simple structure to add, edit, delete, compile and display items using Java SpringBoot</li>
+            <li>At the same time, build a simple interface displayed to users using HTML, CSS, JavaScript through Ajax Query</li>
+          </ul>
+          <p>Github: <a rel="noopener" href="https://github.com/duchinh/Laptop-Shop-Spring.git" target="_blank">https://github.com/duchinh/Laptop-Shop-Spring.git</a></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Mandarin Square Capturing in Java</b></h5>
+          <h6 class="w3-text-teal">Personal Project</h6>
+          <p>Build a Mandarin Square Capturing game using Java language in Project AI</p>
+          <ul>
+            <li>Design simple GUI, capture mouse events using Java Swing and AWT</li>
+            <li>Apply simple Object-oriented programming knowledge </li>
+          </ul>
+          <p>Github: <a rel="noopener" href="https://github.com/duchinh/ProjectGameOAnQuan.git" target="_blank">https://github.com/duchinh/ProjectGameOAnQuan.git</a></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Real Estate management software</b></h5>
+          <h6 class="w3-text-teal">Personal Project</h6>
+          <p>Build Estate software including displaying menu of House Rented, Apartment, ... , filter by item, sort by price/name ... using Ajax Query</p>
+          <ul>
+            <li>Design simple GUI, capture mouse events using HTML,CSS, JavaScript</li>
+            <li>Apply advanced Object-oriented programming knowledge , handle logic using  Spring Framework : Spring DataJPA, Spring Security,..</li>
+          </ul>
+          <p>Github: <a rel="noopener" href="https://github.com/duchinh/Project-Web.git" target="_blank">https://github.com/duchinh/Project-Web.git</a></p><br>
+        </div>
+      </div>
+
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="images/avatar.png" style="width:100%" alt="Avatar">
+        </div>
+        <div class="w3-container">
+          <h2 style="color: black;">Tran Van Duc Chinh</h2>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web Developer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Hanoi, Vietnam</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>chinh23052003@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0948888803</p>
+          <hr>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p><span><b>Programming Languages:</b></span> C#, C, Java, JavaScript, Kotlin</p>
+          <p><span><b>DBMS:</b></span> MS SQL Server, MySQL</p>
+          <p><span><b>Frameworks/Tools:</b></span> HTML,CSS,JavaScript, ReactJS, BootStrap, Java Spring, Python, C/C++</p>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p><b>French:</b> DELF</p>
+          <p><b>English</b>IELTS 6.0</p>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-padding-32 ora-dark ora-font-white">
+  <div class="w3-row-padding">
+    <div class="w3-twothird">
+      <h2 class="w3-text-teal">Web technologies and e-Services</h2>
+      <p>Hanoi University of Science and Technology</p>
+      <p>Tran Van Duc Chinh - 20215263</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3 class="w3-text-teal">MENU</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="images/Logo.png" class="w3-left w3-margin-right" style="width:25px">
+          <a href="index.html" class="w3-large" style="text-decoration: none;">Home</a>
+        </li>
+        <li class="w3-padding-16">
+          <a href="student-info.html" class="w3-large" style="text-decoration: none;">About me</a>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
